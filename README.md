@@ -9,6 +9,6 @@ The technologies we would use to perform analysis are Hadoop, Python, PySpark, A
 
 Initial analysis in local environment:
 
-![alt tag]http://i.imgur.com/cpPvCio.jpg)
+![alt tag](http://i.imgur.com/cpPvCio.jpg)
 
 ![alt tag](http://i.imgur.com/zZoJelI.jpg)
