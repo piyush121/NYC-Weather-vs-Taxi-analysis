@@ -6,3 +6,9 @@ number of pick ups and drops, trip duration etc. in New York City.
 We would work on last year’s data to perform all sorts of analysis.
 We would also use a visualization tool such as D3 to show our findings on the New York City map.
 The technologies we would use to perform analysis are Hadoop, Python, PySpark, Amazon AWS and ArcGIS.
+
+Initial analysis in local environment:
+
+![alt tag]http://i.imgur.com/cpPvCio.jpg)
+
+![alt tag](http://i.imgur.com/zZoJelI.jpg)
