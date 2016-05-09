@@ -7,6 +7,17 @@ We would work on last year’s data to perform all sorts of analysis.
 We would also use a visualization tool such as D3 to show our findings on the New York City map.
 The technologies we would use to perform analysis are Hadoop, Python, PySpark, Amazon AWS and ArcGIS.
 
+Data visualization using D3 :
+
+https://github.com/mbostock/d3
+https://d3js.org/
+
+Datasets:
+
+Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
+
+
 Initial analysis in local environment:
 
 ![alt tag](http://i.imgur.com/cpPvCio.jpg)
