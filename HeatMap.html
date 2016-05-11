@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>New York heatmaps</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <h4><b><i>Taxi Data Analysis</i></b></h4>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 10, lng: -140},
+          zoom: 3
+        });
+
+        var layer = new google.maps.FusionTablesLayer({
+          query: {
+            select: 'Location',
+            from: '1G02yCCV3dfXOIW1MCSErwxkuDSbW8vU3RxdAu6yo'
+          },
+          heatmap: {
+            enabled: true
+          }
+        });
+
+        layer.setMap(map);
+		
+		
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC69IK56T2cawEOiwqm0ArqJ81toX5col8&callback=initMap">
+    </script>
+  </body>
+</html>
