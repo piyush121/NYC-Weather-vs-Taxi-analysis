@@ -1,4 +1,3 @@
-'use strict';
 
 //setup size of line chart
 var margin = {top: 20, right: 20, bottom: 30, left: 70},
