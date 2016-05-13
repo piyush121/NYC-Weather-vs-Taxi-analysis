@@ -1,0 +1,32 @@
+/* Your stylesheet goes here */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+#title {
+	background-color: darkblue;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: limegreen;
+  stroke-width: 2px;
+}
