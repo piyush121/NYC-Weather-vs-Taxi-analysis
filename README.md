@@ -20,6 +20,8 @@ Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 
 Initial analysis in local environment:
 
+![alt tag](https://dl.dropboxusercontent.com/u/98842501/HeatMapPickupJanuary.JPG)
+
 ![alt tag](http://i.imgur.com/cpPvCio.jpg)
 
 ![alt tag](http://i.imgur.com/zZoJelI.jpg)
