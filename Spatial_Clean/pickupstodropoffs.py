@@ -1,6 +1,5 @@
 import csv
 import StringIO
-from rtree import index
 import time
 import sys
 
@@ -57,7 +56,7 @@ class Polygon:
 
 
 def taxiJFKTest():
-	# Create a simple polygon
+	# set month of the file to be created
 	month = 'jan'
 	financial = Polygon([Point(40.712227, -74.017941),Point(40.705998, -74.019370),Point(40.702284, -74.016768),Point(40.700620, -74.013603),Point(40.700975, -74.011141),Point(40.706181, -74.001724),Point(40.712227, -74.017941)])
 	nyu = Polygon([Point(40.733585, -73.999545),Point(40.729755, -74.002174),Point(40.726575, -73.995805),Point(40.730597, -73.992469),Point(40.733585, -73.999545)])
@@ -69,6 +68,7 @@ def taxiJFKTest():
 	f2 = open('./data/nyutojfk_'+month+'.csv','w')
 	f3 = open('./data/timesquaretojfk_'+month+'.csv','w')
 	f4 = open('./data/brooklyntojfk_'+month+'.csv','w')
+	#change file name to be read.
 	with open('yellow_tripdata_2015-01.csv', 'rb') as csvfile:
 		spamreader = csv.reader(csvfile, delimiter=',')
 		skip=0
