@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<!--
+  Copyright 2012 Google Inc. All Rights Reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <title>Fusion Tables and Google Maps API Example: Custom Markers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+      }
+
+      #map-canvas {
+        height: 800px;
+        width: 1800px;
+      }
+    </style>
+
+    <script type="text/javascript"
+        src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+
+      var map;
+      var infoWindow = new google.maps.InfoWindow();
+      var DEFAULT_ICON_URL = 'https://dl.dropboxusercontent.com/u/98842501/dot.png'
+
+      // EDIT: change this key to your own from the Google APIs Console
+      // https://code.google.com/apis/console/
+      var apiKey = 'AIzaSyC69IK56T2cawEOiwqm0ArqJ81toX5col8';
+
+      // EDIT: Specify the table with location data and icon URLs
+      var tableID = '1iAh9u_BAN0CRqSZ8YVjgaYt6b-hHW1xzwm5nUKrl';
+
+      // Create variables for the columns you need to retrieve from the table
+      // EDIT this list as needed, then find and edit two places below.
+      var latitudeColumn = 'pickup_latitude';
+      var longitudeColumn = 'pickup_longitude';
+      //var iconUrlColumn = 'Icon';
+     // var infowindowContentColumn = 'Company';
+
+
+      function createMarker (coordinate, url, content) {
+          var marker = new google.maps.Marker({
+            map: map,
+            position: coordinate,
+            icon: new google.maps.MarkerImage(url)
+          });
+          google.maps.event.addListener(marker, 'click', function(event) {
+            infoWindow.setPosition(coordinate);
+            infoWindow.setContent(content);
+            infoWindow.open(map);
+          });
+        };
+
+      function fetchData() {
+
+        // Construct a query to get data from the Fusion Table
+        // EDIT this list to include the variables for columns named above
+        var query = 'SELECT '
+                    + latitudeColumn + ','
+                    + longitudeColumn + ' FROM '
+                    + tableID;
+        var encodedQuery = encodeURIComponent(query);
+        // Construct the URL
+        var url = ['https://www.googleapis.com/fusiontables/v2/query'];
+            url.push('?sql=' + encodedQuery);
+            url.push('&key=' + apiKey);
+            //url.push('&callback=?');
+				console.log(url);
+
+        // Send the JSONP request using jQuery
+          $.ajax({
+            url: url.join(''),
+            dataType: 'jsonp',
+            success: onDataFetched
+          });
+      }
+
+      function onDataFetched(data) {
+        var rows = data['rows'];
+        var iconUrl;
+        var content;
+        var coordinate;
+		console.log(data);
+        // Copy each row of data from the response into variables.
+        // Each column is present in the order listed in the query.
+        // Starting from 0.
+        // EDIT this if you've changed the columns, above.
+        for (var i in rows) {
+          coordinate = new google.maps.LatLng(rows[i][0],rows[i][1]);
+          iconUrl = DEFAULT_ICON_URL;
+          content = "Taxi located here !";
+
+          if (iconUrl) {   // ensure not empty
+            createMarker(coordinate, iconUrl, content);
+          } else {
+            createMarker(coordinate, DEFAULT_ICON_URL, content);
+          }
+        }
+      }
+
+      function initialize() {
+
+        fetchData();  // begin retrieving data from table, and put it on the map
+
+        map = new google.maps.Map(document.getElementById('map-canvas'), {
+          center: new google.maps.LatLng(40.732931 ,-73.998068),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>

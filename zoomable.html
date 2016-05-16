@@ -59,6 +59,7 @@
 					<option value="TotalTotalAmount" >TotalTotalAmount</option>
 					<option value="AvgTotalAmount" >AvgTotalAmount</option>
 					<option value="TotalNoOfTrips" >TotalNoOfTrips</option>
+					<option value="Temperature(F)" >Temperature</option>
 					
                 </select>
                 
@@ -70,13 +71,13 @@
 	 d3.select("svg").remove();
     // sizing information, including margins so there is space for labels, etc
     var margin =  { top: 20, right: 20, bottom: 200, left: 50 },
-        width = 1800 - margin.left - margin.right,
+        width = 1600 - margin.left - margin.right,
         height = 900 - margin.top - margin.bottom,
         marginOverview = { top: 730, right: margin.right, bottom: 50,  left: margin.left },
         heightOverview = 900 - marginOverview.top - marginOverview.bottom;
 
     // set up a date parsing function for future use
-    var parseDate = d3.time.format("%Y-%m-%d %H:%M").parse;
+    var parseDate = d3.time.format("%m/%d/%Y %H:%M").parse;
 
     // some colours to use for the bars
     var colour = d3.scale.ordinal()

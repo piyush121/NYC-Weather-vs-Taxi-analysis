@@ -28,11 +28,11 @@ body {
 <script src="D3/d3.min.js"></script>
 <script>
 
-var margin = {top: 20, right: 170, bottom: 50, left: 150},
-    width = 2100 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+var margin = {top: 50, right: 170, bottom: 80, left: 150},
+    width = 1400 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
-var parseDate = d3.time.format("%m/%d/%Y %H:%M").parse;
+var parseDate = d3.time.format("%H:%M").parse;
 
 var x = d3.time.scale()
     .range([0, width]);
@@ -62,7 +62,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("lines.csv", function(error, data) {
+d3.csv("datevsdropoffs.csv", function(error, data) {
   if (error) throw error;
 
   color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
@@ -84,7 +84,7 @@ d3.csv("lines.csv", function(error, data) {
 
   y.domain([
     d3.min(cities, function(c) { return d3.min(c.values, function(v) { return v.temperature; }); }),
-    d3.max(cities, function(c) { return 500000 })
+    d3.max(cities, function(c) { return d3.max(c.values, function(v) { return v.temperature; }); })
   ]);
 
   svg.append("g")

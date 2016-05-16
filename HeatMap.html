@@ -12,7 +12,9 @@
       }
       #map {
         height: 100%;
+	  
       }
+	  .md-scroll-mask { position: initial;}
     </style>
   </head>
   <body>
@@ -22,22 +24,28 @@
     <script>
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 10, lng: -140},
-          zoom: 3
+          center: {lat: 40.732931 , lng: -73.998068},
+          zoom: 12
         });
-
-        var layer = new google.maps.FusionTablesLayer({
+		var layer1 = new google.maps.FusionTablesLayer({
           query: {
-            select: 'Location',
-            from: '1G02yCCV3dfXOIW1MCSErwxkuDSbW8vU3RxdAu6yo'
+            select: 'pickup_longitude',
+            from: '1jvpyhvKgRIE15ZykSbNbNLyPLVKJYGlQuBDpNwtC'
           },
-          heatmap: {
-            enabled: true
-          }
+          
         });
 
-        layer.setMap(map);
-		
+        layer1.setMap(map);
+        		
+		var layer2 = new google.maps.FusionTablesLayer({
+          query: {
+            select: 'dropoff_longitude',
+            from: '1jvpyhvKgRIE15ZykSbNbNLyPLVKJYGlQuBDpNwtC'
+          },
+          
+        });
+
+        layer2.setMap(map);
 		
       }
     </script>
