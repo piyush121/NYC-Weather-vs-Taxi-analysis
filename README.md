@@ -21,7 +21,7 @@ Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 #Final Poster: 
 
 ![alt tag] (https://dl.dropboxusercontent.com/u/98842501/FinalPoster_A_Team.jpg)
-<p style='color:red'>Few analysis in local environment:</p>
+#Few analysis in local environment:
 
 <p style='color:red'>Number of Pickups in the month of January:</p>
 ![alt tag](https://dl.dropboxusercontent.com/u/98842501/HeatMapPickupJanuary.JPG)
