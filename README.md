@@ -23,8 +23,10 @@ Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 ![alt tag] (https://dl.dropboxusercontent.com/u/98842501/FinalPoster_A_Team.jpg)
 Few analysis in local environment:
 
+#Number of Pickups in the month of January-->
 ![alt tag](https://dl.dropboxusercontent.com/u/98842501/HeatMapPickupJanuary.JPG)
 
+#Number of Trips between Jan - Feb 2015-->
 ![alt tag](http://i.imgur.com/cpPvCio.jpg)
 
 
