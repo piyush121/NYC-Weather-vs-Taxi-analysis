@@ -17,8 +17,9 @@ Datasets:
 Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 
+#Final Report: https://goo.gl/VOvxBn
 
-Initial analysis in local environment:
+Few analysis in local environment:
 
 ![alt tag](https://dl.dropboxusercontent.com/u/98842501/HeatMapPickupJanuary.JPG)
 
