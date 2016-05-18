@@ -1,4 +1,4 @@
-# NYC-Weather-vs-Taxi-analysis
+# NYC-Weather-vs-Taxi-analysis [Finished]
 Basic Idea:
 
 We’re trying to analyse the relationship between changes in weather and its impact on the Taxi fares,
