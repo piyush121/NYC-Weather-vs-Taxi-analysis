@@ -1,4 +1,4 @@
-# NYC-Weather-vs-Taxi-analysis
+# NYC-Weather-vs-Taxi-analysis [Finished]
 Basic Idea:
 
 We’re trying to analyse the relationship between changes in weather and its impact on the Taxi fares,
@@ -18,11 +18,15 @@ Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 
 #Final Report: https://goo.gl/VOvxBn
+#Final Poster: 
 
-Few analysis in local environment:
+![alt tag] (https://dl.dropboxusercontent.com/u/98842501/FinalPoster_A_Team.jpg)
+#Few analysis in local environment:
 
+<p style='color:red'>Number of Pickups in the month of January:</p>
 ![alt tag](https://dl.dropboxusercontent.com/u/98842501/HeatMapPickupJanuary.JPG)
 
+<p style='color:red'>Number of Trips between Jan - Feb 2015:</p>
 ![alt tag](http://i.imgur.com/cpPvCio.jpg)
 
-![alt tag](http://i.imgur.com/zZoJelI.jpg)
+
