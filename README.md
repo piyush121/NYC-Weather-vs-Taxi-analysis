@@ -4,8 +4,7 @@ Basic Idea:
 We’re trying to analyse the relationship between changes in weather and its impact on the NYC Taxi fares, pickups and dropoffs,
 number of pick ups and drops, trip duration etc. in New York City. 
 We worked on last year’s data to perform all sorts of analysis.
-We also used a visualization tool D3 to show our findings on the New York City map.
-The technologies we would use to perform analysis are Hadoop, Python, Amazon AWS and D3.
+We also used visualization tools like D3.js and Tableau to show our findings on the New York City map.
 
 Data visualization using D3 and Tableau :
 
