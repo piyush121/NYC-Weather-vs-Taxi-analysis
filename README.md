@@ -17,6 +17,7 @@ Taxi Data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 
 #Final Report: https://goo.gl/VOvxBn
+
 #Final Poster: 
 
 ![alt tag](https://lh3.googleusercontent.com/s2hcop32FrdLXttWBhmANl95W1mJU_q4R6MBUfiM6kvIMM8p_Xtp3qE0jDLsPtkXFOlhmNfqnJIBfns=w1920-h917-rw)
