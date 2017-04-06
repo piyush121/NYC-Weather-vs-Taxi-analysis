@@ -19,7 +19,7 @@ Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 #Final Report: https://goo.gl/VOvxBn
 #Final Poster: 
 
-![alt tag] (https://www.dropbox.com/s/xjpybj5fhc458ly/FinalPoster_A_Team.jpg)
+![alt tag](https://www.dropbox.com/s/xjpybj5fhc458ly/FinalPoster_A_Team.jpg?dl=0)
 #Few analysis in local environment:
 
 <p style='color:red'>Number of Pickups in the month of January:</p>
