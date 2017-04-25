@@ -20,13 +20,13 @@ Weather Data: https://nyu.app.box.com/s/4lkrxs9rdsfjzpu1gh9nwen89jxtc9dd
 
 #Final Poster: 
 
-![alt tag](https://lh3.googleusercontent.com/s2hcop32FrdLXttWBhmANl95W1mJU_q4R6MBUfiM6kvIMM8p_Xtp3qE0jDLsPtkXFOlhmNfqnJIBfns=w1920-h917-rw)
+![alt tag](https://lh3.googleusercontent.com/YDE-vFroMzhxvPNJoWkpp8NSyOBqAMQFhpw9mhk5-CtMeh4ghcDJBaImg1n-54ZEhpi-vL6Ba_XOLk4=w1920-h917-rw)
 
 #Few analysis in local environment:
 
 <p style='color:red'>Number of Pickups in the month of January:</p>
 
-![alt tag](https://lh6.googleusercontent.com/VpazGvC_vI161zI1OKyLO1i-e63TFn-9EI9bOSi4r1Ivt0waxYsJ7u9sqfKo13yzGI7uE7FTqPK4D4g=w1920-h917-rw)
+![alt tag](https://lh3.googleusercontent.com/7L2QpjPYD4oF-u_tu3izYhxLnFQBh7TVBYue4KdCHT4fabigJ5qyHB72yof8Gkj23lBwxW-Gg4nB-cY=w1920-h917-rw)
 
 <p style='color:red'>Number of Trips between Jan - Feb 2015:</p>
 
